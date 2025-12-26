@@ -1,0 +1,40 @@
+library(bindSC)
+library(Seurat)
+library(data.table)
+library(Matrix)
+library(matrixStats)
+library(Signac)
+library(StabMap)
+library(scran)
+library(patchwork)
+
+setwd('./MERFISH_ATAC')
+
+rna <- readRDS('./MERFISH/merfish.rds')
+atac <- readRDS('./ATAC/LSI.rds')
+atac_co <- readRDS('./ATAC/rna.rds')
+
+co_feat <- intersect(rownames(rna),rownames(atac_co))
+rna_n <- as.matrix(rna)
+atac_co_n <- NormalizeData(atac_co[co_feat,])
+rm(rna,atac_co)
+gc()
+assay_list = list(RNA=as.matrix(rna_n),ATAC=rbind(t(atac),atac_co_n))
+mosaicDataUpSet(assay_list, plot = F)
+stab = stabMap(assay_list,
+               plot = FALSE,
+               reference_list = c("RNA"),
+               maxFeatures = 10000,
+              ncomponentsReference = 20,
+              ncomponentsSubset = 20)
+
+meta <- readRDS('./meta.rds')
+stab <- stab[rownames(meta),]
+
+out_dir <- './'
+
+write.csv(as.matrix(stab),
+          paste0(out_dir,'/stab.csv'),
+          row.names = FALSE)
+
+
