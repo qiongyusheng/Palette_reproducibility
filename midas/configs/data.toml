@@ -1,0 +1,4175 @@
+# Benchmarking
+
+## TEA_s1
+### random 1
+[TEA_s1_v1]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac"] ],
+    [ ["adt"] ],
+    [ [ "rna"] ],
+    [ [ "atac","rna","adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 2
+[TEA_s1]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac","rna","adt"] ],
+    [ ["atac"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[TEA_s1_v2]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["rna"] ],
+    [ ["adt"] ],
+    [ [ "atac","rna","adt"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+
+### random 4
+[TEA_s1_v3]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac","rna","adt"] ],
+    [ ["adt"] ],
+    [ ["atac"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[TEA_s1_v4]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac","rna","adt"] ],
+    [ ["atac"] ],
+    [ ["adt"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+
+## TEA_s2
+### random 1
+[TEA_s2_v1]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "adt"] ],
+    [ ["atac"] ],
+    [ [ "rna","adt"] ],
+    [ [ "atac","rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 2
+[TEA_s2_v2]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac","rna"] ],
+    [ ["adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[TEA_s2]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac"] ],
+    [ ["atac", "rna"] ],
+    [ [ "rna","adt"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 4
+[TEA_s2_v3]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac","rna"] ],
+    [ ["rna","adt"] ],
+    [ [ "atac"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[TEA_s2_v4]
+raw_data_dirs = [
+    # batch2
+    "./PBMC_TEA/B2",
+    # batch3
+    "./PBMC_TEA/B3",
+    # batch4
+    "./PBMC_TEA/B4",
+    # batch5
+    "./PBMC_TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac","rna"] ],
+    [ ["atac"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+
+## BMMC_s1
+### random 1
+[BMMC_drop5]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ],
+]
+train_ratio = 1
+N = 256
+
+### random 2
+[BMMC_drop1]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch2
+    ./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch3
+   "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ],
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[BMMC_drop6]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ],
+]
+train_ratio = 1
+N = 256
+
+### random 4
+[BMMC_drop4]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ],
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[BMMC_drop2]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ],
+]
+train_ratio = 1
+N = 256
+
+
+## BMMC_s2
+### random 1
+[BMMC_s34]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+   "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch7
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch8
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch9
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    # batch10
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "atac","rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+
+### random 2
+[BMMC_s35]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+   "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch7
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch8
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch9
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    # batch10
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac",'rna'] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[BMMC_s36]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+   "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch7
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch8
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch9
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch10
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac",'rna'] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+### random 4
+[BMMC_s24]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+   "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch7
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch8
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch9
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    # batch10
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "atac",'rna'] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[BMMC_s26]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+   "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch5
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch7
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch8
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch9
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch10
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac",'rna'] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+
+## Ab-seq
+### random 1
+[ABseq_s1]
+raw_data_dirs = [
+    # batch1
+    "./AML/Young_Age/Age1",
+    # batch2
+    "./AML/Young_Age/Age2",
+    # batch3
+    "./AML/Young_Age/Age3",
+    # batch4
+    "./AML/Young_Age/BM1",
+    # batch5
+    "./AML/Young_Age/BM2",
+    # batch6
+    "./AML/Young_Age/BM3",
+
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","adt"] ],
+    [ ["rna"] ],
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 2
+[ABseq_s2]
+raw_data_dirs = [
+    # batch1
+    "./AML/Young_Age/Age1",
+    # batch2
+    "./AML/Young_Age/Age2",
+    # batch3
+    "./AML/Young_Age/Age3",
+    # batch4
+    "./AML/Young_Age/BM1",
+    # batch5
+    "./AML/Young_Age/BM2",
+    # batch6
+    "./AML/Young_Age/BM3",
+
+]
+rna = [
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ['adt'] ],
+    [ ["rna"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ ['adt'] ],
+    [ [ "rna","adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[ABseq_s3]
+raw_data_dirs = [
+    # batch1
+    "./AML/Young_Age/Age1",
+    # batch2
+    "./AML/Young_Age/Age2",
+    # batch3
+    "./AML/Young_Age/Age3",
+    # batch4
+    "./AML/Young_Age/BM1",
+    # batch5
+    "./AML/Young_Age/BM2",
+    # batch6
+    "./AML/Young_Age/BM3",
+
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ['rna'] ],
+    [ [ "rna","adt"] ],
+    [ ["adt"] ],
+    [ [ "rna","adt"] ],
+    [ ['adt'] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 4
+[ABseq]
+raw_data_dirs = [
+    # batch1
+    "./AML/Young_Age/Age1",
+    # batch2
+    "./AML/Young_Age/Age2",
+    # batch3
+    "./AML/Young_Age/Age3",
+    # batch4
+    "./AML/Young_Age/BM1",
+    # batch5
+    "./AML/Young_Age/BM2",
+    # batch6
+    "./AML/Young_Age/BM3",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","adt"] ],
+    [ ["adt"] ],
+    [ [ "rna"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[ABseq_s4]
+raw_data_dirs = [
+    # batch1
+    "./AML/Young_Age/Age1",
+    # batch2
+    "./AML/Young_Age/Age2",
+    # batch3
+    "./AML/Young_Age/Age3",
+    # batch4
+    "./AML/Young_Age/BM1",
+    # batch5
+    "./AML/Young_Age/BM2",
+    # batch6
+    "./AML/Young_Age/BM3",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["rna","adt"] ],
+    [ ["adt"] ],
+    [ ["rna"] ],
+    [ ["adt"] ],
+    [ ["rna","adt"] ],
+    [ ["rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+## Retina
+### random 1
+[Retina_s1]
+raw_data_dirs = [
+    # batch1
+    "./Human_Retina/LGS1OD",
+    # batch2
+    "./Human_Retina/LGS1OS",
+    # batch3
+    "./Human_Retina/LGS2OD",
+    # batch4
+    "./Human_Retina/LGS2OS",
+    # batch5
+    "./Human_Retina/LGS3OD",
+    # batch6
+    "./Human_Retina/LGS3OS",
+    # batch7
+    "./Human_Retina/LVG1OD",
+    # batch8
+    "./Human_Retina/LVG1OS",
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac"] ],
+    [ ["atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna","atac"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 2
+[Retina_s2]
+raw_data_dirs = [
+    # batch1
+    "./Human_Retina/LGS1OD",
+    # batch2
+    "./Human_Retina/LGS1OS",
+    # batch3
+    "./Human_Retina/LGS2OD",
+    # batch4
+    "./Human_Retina/LGS2OS",
+    # batch5
+    "./Human_Retina/LGS3OD",
+    # batch6
+    "./Human_Retina/LGS3OS",
+    # batch7
+    "./Human_Retina/LVG1OD",
+    # batch8
+    "./Human_Retina/LVG1OS",
+]
+rna = [
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 3
+[Retina]
+raw_data_dirs = [
+    # batch1
+    "./Human_Retina/LGS1OD",
+    # batch2
+    "./Human_Retina/LGS1OS",
+    # batch3
+    "./Human_Retina/LGS2OD",
+    # batch4
+    "./Human_Retina/LGS2OS",
+    # batch5
+    "./Human_Retina/LGS3OD",
+    # batch6
+    "./Human_Retina/LGS3OS",
+    # batch7
+    "./Human_Retina/LVG1OD",
+    # batch8
+    "./Human_Retina/LVG1OS",
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac1.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac.mtx",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 4
+[Retina_s3]
+raw_data_dirs = [
+    # batch1
+    "./Human_Retina/LGS1OD",
+    # batch2
+    "./Human_Retina/LGS1OS",
+    # batch3
+    "./Human_Retina/LGS2OD",
+    # batch4
+    "./Human_Retina/LGS2OS",
+    # batch5
+    "./Human_Retina/LGS3OD",
+    # batch6
+    "./Human_Retina/LGS3OS",
+    # batch7
+    "./Human_Retina/LVG1OD",
+    # batch8
+    "./Human_Retina/LVG1OS",
+]
+rna = [
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
+
+### random 5
+[Retina_s4]
+raw_data_dirs = [
+    # batch1
+    "./Human_Retina/LGS1OD",
+    # batch2
+    "./Human_Retina/LGS1OS",
+    # batch3
+    "./Human_Retina/LGS2OD",
+    # batch4
+    "./Human_Retina/LGS2OS",
+    # batch5
+    "./Human_Retina/LGS3OD",
+    # batch6
+    "./Human_Retina/LGS3OS",
+    # batch7
+    "./Human_Retina/LVG1OD",
+    # batch8
+    "./Human_Retina/LVG1OS",
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac1.mtx",
+    "atac.mtx",
+    "atac.mtx",
+    "atac.mtx",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ ["atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
+
+
+
+
+# Reference
+[BMMC]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s1d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s1d2_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s1d3_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s1d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s1d2_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s1d3_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+    [ [ "atac", "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_cite]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+    [ [ "rna", "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_adt]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_multi]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch2
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch3
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna", "atac"] ],
+    [ [ "rna", "atac"] ],
+    [ [ "rna", "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_atac]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch2
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch3
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_rna]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_cite_multi]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_rna_adt]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["adt"] ],
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_rna_atac]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_rna_adt_atac]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# mapping task
+[q_adt_atac]
+raw_data_dirs = [
+    # batch1
+    "./BMMC_CITE_Multiome/CITE/s2d1_cite",
+    # batch2
+    "./BMMC_CITE_Multiome/CITE/s2d4_cite",
+    # batch3
+    "./BMMC_CITE_Multiome/CITE/s2d5_cite",
+    # batch4
+    "./BMMC_CITE_Multiome/Multiome/s2d1_multi",
+    # batch5
+    "./BMMC_CITE_Multiome/Multiome/s2d4_multi",
+    # batch6
+    "./BMMC_CITE_Multiome/Multiome/s2d5_multi",
+    
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "adt"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+]
+train_ratio = 1
+N = 256
+
+# condition
+[asap_cite]
+raw_data_dirs = [
+    # batch1
+    "./PBMC_ASAP/control_asap",
+    # batch2
+    "./PBMC_ASAP/stim_asap",
+    # batch3
+    "./PBMC_CITE/control_cite",
+    # batch4
+    "./PBMC_CITE/stim_cite",
+   
+]
+rna = [
+    "rna1.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+]
+adt = [
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac","adt"] ],
+    [ [ "atac","adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "rna","adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], 
+]
+train_ratio = 1
+N = 256
+
+# cross_species
+[MOp]
+raw_data_dirs = [
+    # batch1
+    "./cross_species/human/SNARE_Lein",
+    # batch2
+    "./cross_species/human/10XV3_Lein",
+    # batch3
+    "./cross_species/human/Multiome_Zemke",
+    # batch4
+    "./cross_species/mouse/10XMultiome_Zemke",
+    # batch5
+    "./cross_species/mouse/10XV3_Lein",
+    # batch6
+    "./cross_species/mouse/10X",
+    # batch7
+    "./cross_species/Marmoset/SNARE_Lein",
+    # batch8
+    "./cross_species/Marmoset/10XV3_Lein",
+]
+rna = [
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+    "co_midas.rds",
+]
+adt = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+atac = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ],  
+]
+train_ratio = 1
+N = 256
+
+
+[WAT]
+raw_data_dirs = [
+    # batch1
+   ./human_mouse_WAT/human/Hs012',
+    # batch2
+    ./human_mouse_WAT/human/Hs013',
+    # batch3
+    ./human_mouse_WAT/human/Hs266',
+    # batch4
+    ./human_mouse_WAT/human/Hs001',
+    # batch5
+    ./human_mouse_WAT/human/Hs002',
+    # batch6
+    ./human_mouse_WAT/human/Hs004',
+    # batch7
+    ./human_mouse_WAT/human/Hs253',
+    # batch8
+    ./human_mouse_WAT/human/Hs254',
+    # batch9
+    ./human_mouse_WAT/human/Hs256',
+    # batch10
+    ./human_mouse_WAT/human/Hs255',
+    # batch11
+    ./human_mouse_WAT/human/Hs009',
+    # batch12
+    ./human_mouse_WAT/human/Hs010',
+    # batch13
+    ./human_mouse_WAT/human/Hs011',
+    # batch14
+    ./human_mouse_WAT/human/Hs235',
+    # batch15
+    ./human_mouse_WAT/human/Hs236',
+    # batch16
+    ./human_mouse_WAT/human/Hs237',
+    # batch17
+    ./human_mouse_WAT/human/Hs238',
+    # batch18
+    ./human_mouse_WAT/human/Hs239',
+    # batch19
+    ./human_mouse_WAT/human/Hs240',
+    # batch20
+    ./human_mouse_WAT/human/Hs242',
+    # batch12
+    ./human_mouse_WAT/human/Hs248',
+    # batch22
+    ./human_mouse_WAT/human/Hs249',
+    # batch23
+    ./human_mouse_WAT/mouse/HFD06.F',
+    # batch24
+    ./human_mouse_WAT/mouse/NCD01.F',
+    # batch25
+    ./human_mouse_WAT/mouse/HFD07.F',
+    # batch26
+    ./human_mouse_WAT/mouse/NCD02.F',
+    # batch27
+    ./human_mouse_WAT/mouse/HFD01',
+    # batch28
+    ./human_mouse_WAT/mouse/NCD06',
+    # batch29
+    ./human_mouse_WAT/mouse/HFD02',
+    # batch30
+    ./human_mouse_WAT/mouse/HFD03',
+    # batch31
+    ./human_mouse_WAT/mouse/HFD04',
+    # batch32
+    ./human_mouse_WAT/mouse/HFD05',
+    # batch33
+    ./human_mouse_WAT/mouse/NCD09',
+    # batch34
+    ./human_mouse_WAT/mouse/NCD10',
+    # batch35
+    ./human_mouse_WAT/mouse/NCD07',
+    # batch36
+    ./human_mouse_WAT/mouse/NCD08',
+]
+rna = [
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+    "homo.rds",
+
+]
+adt = [
+    "",
+    "",
+    "",
+]
+atac = [
+    "",
+    "",
+    "",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+    [ 6 ], [ 7 ], [ 8 ], [ 9 ], [ 10 ], [ 11 ], 
+    [ 12 ], [ 13 ], [ 14 ], [ 15 ], [ 16 ], [ 17 ], 
+    [ 18 ], [ 19 ], [ 20 ], [ 21 ], [ 22 ], [ 23 ], 
+    [ 24 ], [ 25 ], [ 26 ], [ 27 ], [ 28 ], [ 29 ], 
+    [ 30 ], [ 31 ], [ 32 ], [ 33 ], [ 34 ], [ 35 ], 
+]
+train_ratio = 1
+N = 256
+
+# WAT
+[WAT_non]
+raw_data_dirs = [
+    # batch1
+   ./human_mouse_WAT/human/Hs012',
+    # batch2
+    ./human_mouse_WAT/human/Hs013',
+    # batch3
+    ./human_mouse_WAT/human/Hs266',
+    # batch4
+    ./human_mouse_WAT/human/Hs001',
+    # batch5
+    ./human_mouse_WAT/human/Hs002',
+    # batch6
+    ./human_mouse_WAT/human/Hs004',
+    # batch7
+    ./human_mouse_WAT/human/Hs253',
+    # batch8
+    ./human_mouse_WAT/human/Hs254',
+    # batch9
+    ./human_mouse_WAT/human/Hs256',
+    # batch10
+    ./human_mouse_WAT/human/Hs255',
+    # batch11
+    ./human_mouse_WAT/human/Hs009',
+    # batch12
+    ./human_mouse_WAT/human/Hs010',
+    # batch13
+    ./human_mouse_WAT/human/Hs011',
+    # batch14
+    ./human_mouse_WAT/human/Hs235',
+    # batch15
+    ./human_mouse_WAT/human/Hs236',
+    # batch16
+    ./human_mouse_WAT/human/Hs237',
+    # batch17
+    ./human_mouse_WAT/human/Hs238',
+    # batch18
+    ./human_mouse_WAT/human/Hs239',
+    # batch19
+    ./human_mouse_WAT/human/Hs240',
+    # batch20
+    ./human_mouse_WAT/human/Hs242',
+    # batch12
+    ./human_mouse_WAT/human/Hs248',
+    # batch22
+    ./human_mouse_WAT/human/Hs249',
+    # batch23
+    ./human_mouse_WAT/mouse/HFD06.F',
+    # batch24
+    ./human_mouse_WAT/mouse/NCD01.F',
+    # batch25
+    ./human_mouse_WAT/mouse/HFD07.F',
+    # batch26
+    ./human_mouse_WAT/mouse/NCD02.F',
+    # batch27
+    ./human_mouse_WAT/mouse/HFD01',
+    # batch28
+    ./human_mouse_WAT/mouse/NCD06',
+    # batch29
+    ./human_mouse_WAT/mouse/HFD02',
+    # batch30
+    ./human_mouse_WAT/mouse/HFD03',
+    # batch31
+    ./human_mouse_WAT/mouse/HFD04',
+    # batch32
+    ./human_mouse_WAT/mouse/HFD05',
+    # batch33
+    ./human_mouse_WAT/mouse/NCD09',
+    # batch34
+    ./human_mouse_WAT/mouse/NCD10',
+    # batch35
+    ./human_mouse_WAT/mouse/NCD07',
+    # batch36
+    ./human_mouse_WAT/mouse/NCD08',
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+
+]
+adt = [
+    "",
+    "",
+    "",
+]
+atac = [
+    "",
+    "",
+    "",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+]
+comb_ratios = [
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+    [ 1 ], 
+    [ 1 ], 
+    [ 1 ],
+    [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], 
+    [ 6 ], [ 7 ], [ 8 ], [ 9 ], [ 10 ], [ 11 ], 
+    [ 12 ], [ 13 ], [ 14 ], [ 15 ], [ 16 ], [ 17 ], 
+    [ 18 ], [ 19 ], [ 20 ], [ 21 ], [ 22 ], [ 23 ], 
+    [ 24 ], [ 25 ], [ 26 ], [ 27 ], [ 28 ], [ 29 ], 
+    [ 30 ], [ 31 ], [ 32 ], [ 33 ], [ 34 ], [ 35 ], 
+]
+train_ratio = 1
+N = 256
+
+[kidney]
+raw_data_dirs = [
+    # batch1
+    "./Human_kidney/RNA",
+    # batch2
+    "./Human_kidney/ATAC",
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac_midas.rds",
+]
+peak = [
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ ["rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], 
+]
+train_ratio = 1
+N = 256
+
+[RNA_CyTOF]
+raw_data_dirs = [
+    # batch1
+    "./RNA_CyTOF/RNA",
+    # batch2
+    "./RNA_CyTOF/cytof",
+   
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "cytof.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ],
+]
+train_ratio = 1
+N = 256
+
+[Tonsil_RNA_CODEX]
+raw_data_dirs = [
+    # batch1
+    "./Human_Tonsil_RNA_CODEX/RNA",
+    # batch2
+    "./Human_Tonsil_RNA_CODEX/CODEX",
+    
+]
+rna = [
+    "X.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], 
+]
+train_ratio = 1
+N = 256
+
+[MERFISH_ATAC]
+raw_data_dirs = [
+    # batch1
+    "./MERFISH_ATAC/MERFISH",
+    # batch2
+    "./MERFISH_ATAC/ATAC",
+   
+]
+rna = [
+    "merfish.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac_midas.rds",
+]
+peak = [
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ],
+]
+train_ratio = 1
+N = 256
+
+[Visium_tonsil]
+raw_data_dirs = [
+    # batch1
+    "./10x_Visium_human_tonsil/slice1",
+    # batch2
+    "./10x_Visium_human_tonsil/slice2",
+    # batch3
+    "./10x_Visium_human_tonsil/slice3",
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "",
+    "",
+    "",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], ]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], 
+]
+train_ratio = 1
+N = 256
+
+
+[BMMC_s_impu]
+raw_data_dirs = [
+    # batch1
+    "./imputation/input/BMMC_s/CITE1rna",
+    # batch2
+    "./imputation/input/BMMC_s/CITE1adt",
+    # batch3
+    "./imputation/input/BMMC_s/CITE2rna",
+    # batch4
+    "./imputation/input/BMMC_s/CITE2adt",
+    # batch5
+    "./imputation/input/BMMC_s/CITE3",
+    # batch6
+    "./imputation/input/BMMC_s/Multiome1",
+    # batch7
+    "./imputation/input/BMMC_s/Multiome2rna",
+    # batch8
+    "./imputation/input/BMMC_s/Multiome2atac",
+    # batch9
+    "./imputation/input/BMMC_s/Multiome3rna",
+    # batch10
+    "./imputation/input/BMMC_s/Multiome3atac",
+    
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+    [ [ "rna","adt"] ],
+    [ [ "atac","rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ],
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ],
+]
+train_ratio = 1
+N = 256
+
+[TEA_s1_impu]
+raw_data_dirs = [
+    # batch2
+    "./imputation/input/TEA/B2",
+    # batch3
+    "./imputation/input/TEA/B3",
+    # batch4
+    "./imputation/input/TEA/B4",
+    # batch5
+    "./imputation/input/TEA/B5",
+
+]
+rna = [
+    "rna.rds",
+    "rna1.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac","rna","adt"] ],
+    [ ["atac"] ],
+    [ [ "rna"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+[TEA_s2_impu]
+raw_data_dirs = [
+    # batch2
+    "./imputation/input/TEA/B2",
+    # batch3
+    "./imputation/input/TEA/B3",
+    # batch4
+    "./imputation/input/TEA/B4",
+    # batch5
+    "./imputation/input/TEA/B5",
+
+]
+rna = [
+    "rna1.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt.rds",
+    "adt.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "atac"] ],
+    [ ["atac", "rna"] ],
+    [ [ "rna","adt"] ],
+    [ [ "adt"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ],  
+]
+train_ratio = 1
+N = 256
+
+[retina_impu]
+raw_data_dirs = [
+    # batch1
+    "./imputation/input/Retina/LGS1OD",
+    # batch2
+    "./imputation/input/Retina/LGS1OS",
+    # batch3
+    "./imputation/input/Retina/LGS2OD",
+    # batch4
+    "./imputation/input/Retina/LGS2OS",
+    # batch5
+    "./imputation/input/Retina/LGS3OD",
+    # batch6
+    "./imputation/input/Retina/LGS3OS",
+    # batch7
+    "./imputation/input/Retina/LVG1OD",
+    # batch8
+    "./imputation/input/Retina/LVG1OS",
+]
+rna = [
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna.rds",
+    "rna1.rds",
+    "rna1.rds",
+    "rna1.rds",
+]
+adt = [
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+    "adt1.rds",
+]
+atac = [
+    "atac.rds",
+    "atac.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac1.rds",
+    "atac.rds",
+    "atac.rds",
+    "atac.rds",
+]
+peak = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+raw_data_frags = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+]
+combs = [
+    # tea
+    [ [ "rna","atac"] ],
+    [ [ "rna","atac"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "rna"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+    [ [ "atac"] ],
+]
+comb_ratios = [
+    [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1 ], 
+]
+s_joint = [
+    # dogma
+    [ 0 ], [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ],[ 7 ], 
+]
+train_ratio = 1
+N = 256
